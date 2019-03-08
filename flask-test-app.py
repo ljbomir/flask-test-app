@@ -13,8 +13,8 @@ def home():
 def get_data():
     count = 1
     url = 'https://lyubo.info'
-    resp = requests.get(url).content
     while (count < 5):
+            resp = requests.get(url).content
             print(resp)
             count +=1
             sleep(1)
