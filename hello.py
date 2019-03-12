@@ -2,7 +2,6 @@ from flask import Flask
 import os
 import requests
 import time
-#r = requests.get("https://i506493hi.cfapps.sap.hana.ondemand.com/")
 
 
 app = Flask(__name__)
@@ -26,7 +25,7 @@ def get_data():
         count +=1
         time.sleep(0.5)
 
-    a = "'%s' was called %d times" %(url,count)   
+   a = "'%s' was called %d times" %(url,count)   
     return a
 
 if __name__ == '__main__':
